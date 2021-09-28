@@ -1,10 +1,8 @@
 package lessons.l3;
 
-import com.sun.codemodel.internal.JForEach;
 import lessons.l2.Human;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class HomeTask1 {
