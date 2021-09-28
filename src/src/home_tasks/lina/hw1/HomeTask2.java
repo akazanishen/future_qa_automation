@@ -1,6 +1,6 @@
 package home_tasks.lina.hw1;
 
-public class HomeTask1 {
+public class HomeTask2 {
     public static void main(String[] args) {
         Cat firstCat = new Cat("Murka", 1);
 
