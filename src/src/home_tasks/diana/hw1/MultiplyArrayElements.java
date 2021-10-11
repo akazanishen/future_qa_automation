@@ -1,6 +1,6 @@
 package home_tasks.diana.hw1;
 
-public class Arrays {
+public class MultiplyArrayElements {
 
     public static void main(String[] args) {
 
