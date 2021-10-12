@@ -11,14 +11,21 @@ public class HomeTask1 {
         char chr = 500;
         float flt = 5000;
 
-        System.out.println("Hello World!");
+        System.out.println("Double");
         System.out.println(double1);
+        System.out.println("int");
         System.out.println(int1);
+        System.out.println("byte");
         System.out.println(by1);
+        System.out.println("boolean");
         System.out.println(t);
+        System.out.println("short");
         System.out.println(sh);
+        System.out.println("long");
         System.out.println(lng);
+        System.out.println("char");
         System.out.println(chr);
+        System.out.println("float");
         System.out.println(flt);
     }
 }
