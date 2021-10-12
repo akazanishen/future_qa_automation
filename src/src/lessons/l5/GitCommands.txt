@@ -1,0 +1,64 @@
+Git theses:
+	1) Separate staging (индексацию) and committing
+	2) Changes, not files
+	3) ‘master’ is the name of the default branch
+	4) The HEAD points out the last commit in the current checkout branch. It is like a pointer to any reference. The HEAD can be understood as the "current branch." When you switch branches with 'checkout,' the HEAD is transferred to the new branch.
+
+Create git repo:
+    git init
+
+Work with changes:
+    git status
+    git add <file-name>
+    git add .
+    git commit -m "<commit message>"
+    git log
+    git log --pretty=oneline
+    git log --pretty=oneline --max-count=2
+    git log --pretty=oneline --since='5 minutes ago'
+    git log --pretty=oneline --until='5 minutes ago'
+    git log --pretty=oneline --author=<your name>
+    git log --pretty=oneline --all
+
+    git checkout <hash>
+    git checkout <branch-name>
+
+Revert changes before staging:
+    git checkout <file-name>
+
+Revert changes after staging:
+	git reset HEAD <file-name>
+	git checkout <file-name>
+
+Revert changes after commit:
+    git revert HEAD
+    git reset --hard <hash-commit>
+    git reset --soft <hash-commit>
+
+Change previous commit:
+    git commit --amend -m "<commit message>"
+
+Create new branch:
+    git branch <branch-name>
+    git checkout <branch-name>
+    OR
+    git checkout -b <branch-name>
+
+
+Merge branches:
+    git merge <branch-name>
+
+
+Clone repo:
+    git clone <original-repo-name> <cloned-repo-name>
+
+See remote repo:
+    git remote
+    git remote show origin
+    git branch -a -return the list of origin branches
+
+Get changes from origin repo:
+    git fetch
+    git merge origin/master
+    OR
+    git pull
