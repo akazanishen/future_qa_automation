@@ -1,4 +1,4 @@
-package home_tasks.diana.hw1;
+package home_tasks.diana.hw4;
 
 public class MultiplyArrayElements {
 
