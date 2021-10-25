@@ -1,4 +1,4 @@
-package home_tasks.diana.hw3;
+package home_tasks.diana.hw2_3;
 
 public class CoffeeHouse extends CateringInstitution {
 
