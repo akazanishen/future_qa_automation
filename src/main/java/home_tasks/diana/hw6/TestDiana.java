@@ -10,7 +10,7 @@ public class TestDiana extends Config {
     HomePage homePage = new HomePage();
     ModalWindow modalWindow = new ModalWindow();
 
-    @org.testng.annotations.Test
+    @Test
     public void verifyRegistration() {
 
         homePage.clickLoginBtn();
