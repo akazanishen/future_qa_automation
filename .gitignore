@@ -1,0 +1,13 @@
+.target/
+target/*
+/shelf/
+/.idea/workspace.xml
+/compiler.xml
+.idea
+*.iws
+*.iml
+*.ipr
+target/
+*.class
+.classpath
+build/*
