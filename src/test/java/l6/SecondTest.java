@@ -91,7 +91,6 @@ public class SecondTest extends Config {
 
         List<String> actualResult = homePage.getSectionItemTimestamps("Політика");
 
-        //Variant 1
         SoftAssertions.assertSoftly(softly -> {
             softly.assertThat(actualResult.get(0)).matches("^\\d{2}:\\d{3}$");
             System.out.println("First assert passed");
