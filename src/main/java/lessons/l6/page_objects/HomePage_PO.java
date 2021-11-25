@@ -9,6 +9,8 @@ import static com.codeborne.selenide.Selenide.$x;
 public class HomePage_PO {
 
     protected SelenideElement pageLogo = $x("//section[@class='header__logo']/a/img");
-    protected ElementsCollection newsContainer = $$x("//section[@class='feed__section']/h2/a");
+    protected String newsContainer = "//section[@class='feed__section']";
+    protected String newsContainerLink = ("./h2/a");
+    protected String newsContainerItemTime = ("./div/time");
 
 }
