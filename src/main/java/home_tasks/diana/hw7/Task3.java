@@ -13,9 +13,11 @@ public class Task3 {
         toy.put("Lego", "constructor");
         toy.put("Hot wheels", "car&track");
 
-        Product.displayKeysAndValues(toy);
-        Product.displayNames(toy);
-        Product.displayTypes(toy);
+        Product myProduct = new Product();
+
+        myProduct.displayKeysAndValues(toy);
+        myProduct.displayNames(toy);
+        myProduct.displayTypes(toy);
 
     }
 }
@@ -23,15 +25,15 @@ public class Task3 {
 
 class Product {
 
-    public static void displayKeysAndValues(Map<String, String> product) {
+    public void displayKeysAndValues(Map<String, String> product) {
         System.out.println("The product set is: " + product.entrySet());
     }
 
-    public static void displayNames(Map<String, String> product) {
+    public void displayNames(Map<String, String> product) {
         System.out.println("The product names are: " + product.keySet());
     }
 
-    public static void displayTypes(Map<String, String> product) {
+    public void displayTypes(Map<String, String> product) {
         System.out.println("The product types are: " + product.values());
     }
 
