@@ -1,6 +1,5 @@
 package home_tasks.diana.hw7;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;

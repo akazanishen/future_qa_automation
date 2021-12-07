@@ -1,6 +1,5 @@
 package home_tasks.diana.hw7;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,9 +13,28 @@ public class Task3 {
         toy.put("Lego", "constructor");
         toy.put("Hot wheels", "car&track");
 
-        System.out.println("The product set is: " + toy.entrySet());
-        System.out.println("The product names are: " + toy.keySet());
-        System.out.println("The product types are: " + toy.values());
+        Product myProduct = new Product();
+
+        myProduct.displayKeysAndValues(toy);
+        myProduct.displayNames(toy);
+        myProduct.displayTypes(toy);
 
     }
+}
+
+
+class Product {
+
+    public void displayKeysAndValues(Map<String, String> product) {
+        System.out.println("The product set is: " + product.entrySet());
+    }
+
+    public void displayNames(Map<String, String> product) {
+        System.out.println("The product names are: " + product.keySet());
+    }
+
+    public void displayTypes(Map<String, String> product) {
+        System.out.println("The product types are: " + product.values());
+    }
+
 }

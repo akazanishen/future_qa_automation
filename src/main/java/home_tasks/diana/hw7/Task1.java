@@ -7,21 +7,21 @@ import java.util.List;
 public class Task1 {
     public static void main(String[] args) {
 
-        HeavyBox heavyBor1 = new HeavyBox("Plates", 7);
-        HeavyBox heavyBor2 = new HeavyBox("Books", 10);
-        HeavyBox heavyBor3 = new HeavyBox("Clothes", 8.7);
+        HeavyBox heavyBox1 = new HeavyBox("Plates", 7);
+        HeavyBox heavyBox2 = new HeavyBox("Books", 10);
+        HeavyBox heavyBox3 = new HeavyBox("Clothes", 8.7);
 
         // a)
         List<HeavyBox> myBoxes = new ArrayList<>();
-        myBoxes.add(heavyBor1);
-        myBoxes.add(heavyBor2);
-        myBoxes.add(heavyBor3);
+        myBoxes.add(heavyBox1);
+        myBoxes.add(heavyBox2);
+        myBoxes.add(heavyBox3);
 
         // б)
         myBoxes.forEach(el -> el.displayNameAndWeight());
 
         //в)
-        myBoxes.get(0).setWeight(heavyBor1.getWeight() + 1);
+        myBoxes.get(0).setWeight(myBoxes.get(0).getWeight() + 1);
         myBoxes.forEach(el -> el.displayNameAndWeight());
 
         //г)
