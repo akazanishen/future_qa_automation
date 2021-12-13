@@ -5,6 +5,8 @@ import home_tasks.diana.hw6.pages.HomePage;
 import home_tasks.diana.hw6.Config;
 import home_tasks.diana.hw6.pages.ModalWindow;
 import org.testng.annotations.Test;
+import java.util.Arrays;
+import java.util.List;
 
 public class Task1and2 extends Config {
 
@@ -33,7 +35,9 @@ public class Task1and2 extends Config {
         modalWindow.enterPasswordConf();
         modalWindow.clickCreateBtn();
         homePage.verifyUserSignedUp();
-        homePage.verifyDropDownOptions();
+        List<String> expectedDropdownOptions = Arrays.asList(
+                "Messages", "Details", "Orders list", "Log out");
+        homePage.verifyDropDownOptions(expectedDropdownOptions);
     }
 
 }
