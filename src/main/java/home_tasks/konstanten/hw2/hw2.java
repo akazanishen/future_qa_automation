@@ -1,7 +1,5 @@
 package home_tasks.konstanten.hw2;
 
-import lessons.l2.Human;
-
 public class hw2 {
 
     public static void main(String[] args){

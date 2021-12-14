@@ -33,21 +33,18 @@ public class HomePage extends HomePage_PO {
         });
     }
 
-    public List<String> getDropdownOptions() {
+    public List<String> getActualDropdownOptions() {
         List<String> dropdownOptions = options.stream()
                 .map(SelenideElement::getText)
                 .collect(Collectors.toList());
         dropdownOptions.removeAll(Collections.singletonList(""));
-        log.info(String.format("categories names: '%s'", dropdownOptions));
+        log.info(String.format("Actual dropdown options are: '%s'", dropdownOptions));
         return dropdownOptions;
     }
 
-    public void verifyDropDownOptions() {
+    public void verifyDropDownOptions(List<String> expectedDropdownOptions) {
         myAccountDropdown.click();
-        List<String> actualDropdownOptions = getDropdownOptions();
-
-        List<String> expectedDropdownOptions = Arrays.asList(
-                "Messages", "Details", "Orders list", "Log out");
+        List<String> actualDropdownOptions = getActualDropdownOptions();
         assertReflectionEquals(expectedDropdownOptions, actualDropdownOptions, LENIENT_ORDER);
 
 
