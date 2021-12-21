@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static java.time.format.DateTimeFormatter.ISO_DATE_TIME;
@@ -37,7 +38,7 @@ public class Task3 {
         dates.add(dates.get(0));//duplicate
 
         Map<String, Boolean> map = dates.stream()
-                .collect(Collectors.toMap(s -> s, Task3::isValidISODateTime, (x, y) -> x));
+                .collect(Collectors.toMap(Function.identity(), Task3::isValidISODateTime, (x, y) -> x));
         System.out.println(map);
 
     }
